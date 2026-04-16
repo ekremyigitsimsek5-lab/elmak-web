@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NestIQ – Premium Gayrimenkul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">NestIQ<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#listings">İlanlar</a></li>
+      <li><a href="#about">Hakkımızda</a></li>
+      <li><a href="#services">Hizmetler</a></li>
+      <li><a href="#contact">İletişim</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Ücretsiz Değerleme</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=80" alt="hero" class="hero-img" />
+    </div>
+    <div class="hero-content">
+      <span class="hero-label">İstanbul • Ankara • İzmir</span>
+      <h1 class="hero-title">Hayalinizdeki<br/><em>Evi Bulun.</em></h1>
+      <p class="hero-sub">Türkiye'nin en seçkin konut ve ticari gayrimenkul portföyüne tek bir platformdan ulaşın.</p>
+      <div class="hero-search">
+        <select>
+          <option>Konut</option>
+          <option>Ticari</option>
+          <option>Arsa</option>
+        </select>
+        <input type="text" placeholder="Şehir, semt veya proje adı..." />
+        <button>Ara</button>
+      </div>
+      <div class="hero-stats">
+        <div><strong>2.400+</strong><span>Aktif İlan</span></div>
+        <div><strong>840</strong><span>Satılan Mülk</span></div>
+        <div><strong>12 Yıl</strong><span>Deneyim</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">↓</div>
+  </section>
+
+  <!-- FEATURED LISTINGS -->
+  <section class="listings" id="listings">
+    <div class="section-header">
+      <span class="section-tag">Öne Çıkan İlanlar</span>
+      <h2>Seçkin Mülkler</h2>
+      <p>Uzman ekibimiz tarafından elle seçilmiş, en değerli lokasyonlardaki mülkler.</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active">Tümü</button>
+      <button class="filter-btn">Satılık</button>
+      <button class="filter-btn">Kiralık</button>
+      <button class="filter-btn">Yeni Proje</button>
+    </div>
+
+    <div class="listings-grid">
+
+      <div class="card featured">
+        <div class="card-badge">Öne Çıkan</div>
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=700&q=80" alt="villa" />
+          <div class="card-overlay">
+            <a href="#" class="card-btn">İncele →</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Satılık • Villa</div>
+          <h3>Zekeriyaköy Modern Villa</h3>
+          <p class="card-loc">📍 Sarıyer, İstanbul</p>
+          <div class="card-specs">
+            <span>5+1</span>
+            <span>320 m²</span>
+            <span>Havuzlu</span>
+          </div>
+          <div class="card-footer">
+            <strong class="card-price">₺18.500.000</strong>
+            <span class="card-tag">Yeni</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=80" alt="daire" />
+          <div class="card-overlay">
+            <a href="#" class="card-btn">İncele →</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Kiralık • Daire</div>
+          <h3>Kadıköy Panoramik Rezidans</h3>
+          <p class="card-loc">📍 Kadıköy, İstanbul</p>
+          <div class="card-specs">
+            <span>3+1</span>
+            <span>145 m²</span>
+            <span>Deniz Manzarası</span>
+          </div>
+          <div class="card-footer">
+            <strong class="card-price">₺65.000 / ay</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=80" alt="konut" />
+          <div class="card-overlay">
+            <a href="#" class="card-btn">İncele →</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Satılık • Daire</div>
+          <h3>Çankaya Lüks Penthouse</h3>
+          <p class="card-loc">📍 Çankaya, Ankara</p>
+          <div class="card-specs">
+            <span>4+1</span>
+            <span>210 m²</span>
+            <span>Teras</span>
+          </div>
+          <div class="card-footer">
+            <strong class="card-price">₺9.200.000</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=700&q=80" alt="ev" />
+          <div class="card-overlay">
+            <a href="#" class="card-btn">İncele →</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Satılık • Villa</div>
+          <h3>Urla Denize Sıfır Villa</h3>
+          <p class="card-loc">📍 Urla, İzmir</p>
+          <div class="card-specs">
+            <span>4+2</span>
+            <span>280 m²</span>
+            <span>Özel İskele</span>
+          </div>
+          <div class="card-footer">
+            <strong class="card-price">₺22.000.000</strong>
+            <span class="card-tag">Fırsat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=700&q=80" alt="daire2" />
+          <div class="card-overlay">
+            <a href="#" class="card-btn">İncele →</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Kiralık • Daire</div>
+          <h3>Beşiktaş Tarihi Konak Kat</h3>
+          <p class="card-loc">📍 Beşiktaş, İstanbul</p>
+          <div class="card-specs">
+            <span>2+1</span>
+            <span>95 m²</span>
+            <span>Restore</span>
+          </div>
+          <div class="card-footer">
+            <strong class="card-price">₺48.000 / ay</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=700&q=80" alt="ofis" />
+          <div class="card-overlay">
+            <a href="#" class="card-btn">İncele →</a>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-type">Satılık • Ofis</div>
+          <h3>Maslak Plaza Ofis Katı</h3>
+          <p class="card-loc">📍 Maslak, İstanbul</p>
+          <div class="card-specs">
+            <span>Açık Plan</span>
+            <span>400 m²</span>
+            <span>A Sınıfı</span>
+          </div>
+          <div class="card-footer">
+            <strong class="card-price">₺14.800.000</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="center-btn">
+      <a href="#" class="btn-outline">Tüm İlanları Gör</a>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why">
+    <div class="why-inner">
+      <div class="why-text">
+        <span class="section-tag">Neden NestIQ?</span>
+        <h2>Güvenin<br/>Adresi.</h2>
+        <p>12 yılı aşkın deneyimimiz ve 500'ü aşkın mutlu müşterimizle Türkiye'nin gayrimenkul pazarında fark yaratıyoruz. Her mülk, uzman ekibimiz tarafından detaylıca incelenir.</p>
+        <ul class="why-list">
+          <li><span>✓</span> Şeffaf ve komisyonsuz değerleme</li>
+          <li><span>✓</span> Hukuki danışmanlık desteği</li>
+          <li><span>✓</span> 7/24 müşteri hizmetleri</li>
+          <li><span>✓</span> Sanal tur ve 3D görüntüleme</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Danışmanlık Al</a>
+      </div>
+      <div class="why-img">
+        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80" alt="ofis" />
+        <div class="why-badge">
+          <strong>500+</strong>
+          <span>Mutlu Müşteri</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-header light">
+      <span class="section-tag">Hizmetlerimiz</span>
+      <h2>Her İhtiyaca Çözüm</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Konut Danışmanlığı</h3>
+        <p>Hayalinizdeki evi bulmak için kişiselleştirilmiş arama ve danışmanlık hizmeti.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Yatırım Analizi</h3>
+        <p>Piyasa verilerine dayalı ROI hesaplamaları ve yatırım fırsatı raporları.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Ticari Gayrimenkul</h3>
+        <p>Ofis, dükkan ve depo kiralama ile satın alma süreçlerinin tamamı.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚖️</div>
+        <h3>Hukuki Destek</h3>
+        <p>Tapu devri, sözleşme hazırlama ve imar konularında uzman avukat desteği.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>İç Mimarlık</h3>
+        <p>Satın aldığınız mülkü hayalinizdeki hale getiriyoruz. Anahtar teslim çözümler.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Sanal Tur</h3>
+        <p>360° fotoğraf ve video ile mülkleri evinizin konforunda gezip inceleyin.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-header">
+      <span class="section-tag">Müşteri Deneyimleri</span>
+      <h2>Ne Dediler?</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p>"NestIQ ekibi gerçekten olağanüstüydü. Aradığım evi 2 haftada buldular. Hukuki süreçte de yanımda oldular."</p>
+        <div class="testi-author">
+          <img src="https://i.pravatar.cc/60?img=12" alt="müşteri" />
+          <div>
+            <strong>Ayşe Kara</strong>
+            <span>Kadıköy, İstanbul</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p>"Yatırım amacıyla aldığım daire için yaptıkları piyasa analizi mükemmeldi. 1 yılda %28 değer artışı sağladım."</p>
+        <div class="testi-author">
+          <img src="https://i.pravatar.cc/60?img=33" alt="müşteri" />
+          <div>
+            <strong>Mehmet Demir</strong>
+            <span>Çankaya, Ankara</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p>"Ofisimizi kiralamak için 3 farklı kurumla çalıştık, ancak NestIQ en profesyonel deneyimi sundu."</p>
+        <div class="testi-author">
+          <img src="https://i.pravatar.cc/60?img=47" alt="müşteri" />
+          <div>
+            <strong>Selin Yıldız</strong>
+            <span>Maslak, İstanbul</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <span class="section-tag">İletişim</span>
+        <h2>Konuşalım.</h2>
+        <p>Uzman danışmanlarımız sizin için burada. Ücretsiz değerleme veya danışmanlık için hemen bize ulaşın.</p>
+        <div class="contact-info">
+          <div>📞 <a href="tel:+902121234567">+90 (212) 123 45 67</a></div>
+          <div>✉️ <a href="mailto:info@nestiq.com.tr">info@nestiq.com.tr</a></div>
+          <div>📍 Nispetiye Cad. No:12, Levent, İstanbul</div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <input type="text" placeholder="Adınız" required />
+          <input type="text" placeholder="Soyadınız" required />
+        </div>
+        <input type="email" placeholder="E-posta adresiniz" required />
+        <input type="tel" placeholder="Telefon numaranız" />
+        <select>
+          <option value="">Hizmet seçin...</option>
+          <option>Konut Danışmanlığı</option>
+          <option>Yatırım Analizi</option>
+          <option>Ticari Gayrimenkul</option>
+          <option>Diğer</option>
+        </select>
+        <textarea placeholder="Mesajınız..." rows="4"></textarea>
+        <button type="submit" class="btn-primary full">Gönder</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">NestIQ<span>.</span></div>
+        <p>Türkiye'nin güvenilir gayrimenkul danışmanlık platformu.</p>
+        <div class="footer-social">
+          <a href="#">in</a>
+          <a href="#">ig</a>
+          <a href="#">fb</a>
+          <a href="#">tw</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hizmetler</h4>
+        <ul>
+          <li><a href="#">Konut Satış</a></li>
+          <li><a href="#">Kiralama</a></li>
+          <li><a href="#">Yatırım</a></li>
+          <li><a href="#">Ticari</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Şehirler</h4>
+        <ul>
+          <li><a href="#">İstanbul</a></li>
+          <li><a href="#">Ankara</a></li>
+          <li><a href="#">İzmir</a></li>
+          <li><a href="#">Bursa</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Şirket</h4>
+        <ul>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Kariyer</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 NestIQ Gayrimenkul. Tüm hakları saklıdır.</p>
+      <div>
+        <a href="#">Gizlilik Politikası</a>
+        <a href="#">Kullanım Koşulları</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
