@@ -27,3 +27,4 @@ Bu proje, web geliştirme becerilerimi geliştirmek ve portföy oluşturmak amac
 
 ## 📌 Not
 Bu proje demo amaçlıdır ve geliştirilmeye açıktır.
+🌐 Live Demo: https://ekremyigitsimsek5-lab.github.io/elmak-web/
